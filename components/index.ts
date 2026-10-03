@@ -2,10 +2,8 @@
 export { Header } from './layout/header'
 export { LandingHeader } from './layout/landingHeader'
 
-// Feature Components
-export { Hero } from './features/heroSection'
-export { HowItWorks } from './features/howItWorks'
-export { Features } from './features/features'
+// Landing sections
+export { LandingPage } from './features/landingSections'
 
 // Provider Components
 export { BitcoinWalletProvider } from './providers/bitcoinWalletProvider'

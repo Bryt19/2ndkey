@@ -11,26 +11,26 @@ export function Header() {
   const isConnected = fhevmWallet.isConnected
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-glass border-b border-white/10">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-xl border-b border-white/10">
       <div className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Left - Branding */}
           <Link href="/" className="flex items-center gap-3">
             <div className="w-8 h-8 bg-yo-yellow rounded-full flex items-center justify-center">
-              <span className="text-black font-bold text-sm">H</span>
+              <span className="text-black font-bold text-sm">2</span>
             </div>
             <h1 className="text-2xl md:text-3xl font-bold text-white">
-              Heritaz
+              2ndKey
             </h1>
           </Link>
 
           {/* Center - Nav */}
           {isConnected && (
             <nav className="hidden md:flex items-center gap-6">
-              <Link href="/dashboard" className="text-nav text-white/60 hover:text-white transition-colors">Dashboard</Link>
-              <Link href="/vault/create" className="text-nav text-white/60 hover:text-white transition-colors">Create Vault</Link>
-              <Link href="/beneficiary" className="text-nav text-white/60 hover:text-white transition-colors">Claims</Link>
-              <Link href="/settings" className="text-nav text-white/60 hover:text-white transition-colors">Settings</Link>
+              <Link href="/dashboard" className="text-sm font-medium text-white/60 hover:text-white transition-colors">Dashboard</Link>
+              <Link href="/vault/create" className="text-sm font-medium text-white/60 hover:text-white transition-colors">Create Vault</Link>
+              <Link href="/beneficiary" className="text-sm font-medium text-white/60 hover:text-white transition-colors">Claims</Link>
+              <Link href="/settings" className="text-sm font-medium text-white/60 hover:text-white transition-colors">Settings</Link>
             </nav>
           )}
 
